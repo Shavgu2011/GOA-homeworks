@@ -1,0 +1,5 @@
+Person1= input("-Hello how are you: ")
+Person2= input("-I am fine too: ")
+P1= input("-How old are you: ")
+P2= input("-Do you like GOA")
+print(Person1 , Person2 , P1 , P2)
