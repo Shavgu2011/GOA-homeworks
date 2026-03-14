@@ -31,15 +31,18 @@
 
 # print(num)
 
-arr = [1,2,3,4,5,6,7]
-sum = 1
-for i in arr:
-    sum *= i
+# arr = [1,2,3,4,5,6,7]
+# sum = 1
+# for i in arr:
+#     sum *= i
    
-print(sum)
+# print(sum)
 
 
-num = '222'
+# num = '222'
 
-print(num * 2)
+# print(num * 2)
 
+num = [1,2,3,4,5,6,7,8,9]
+num.remove(min)
+print(num)
