@@ -1,0 +1,17 @@
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    color: darkblue;
+    font-size: 36px;
+}
+
+p {
+    font-family: Georgia;
+    background-color: beige;
+}
+
+li {
+    color: darkgreen;
+}
