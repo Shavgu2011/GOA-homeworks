@@ -1,0 +1,13 @@
+body {
+    background-color: burlywood; 
+}
+
+#main-title {
+    color: darkorchid;
+    text-align: center;
+}
+
+.book-item {
+    font-size: 18px;
+    font-family: "Georgia", serif;
+}

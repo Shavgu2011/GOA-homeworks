@@ -1,0 +1,23 @@
+body {
+    background-color: navy; 
+}
+
+.main-title {
+    color: darkblue;
+    font-size: 36px;
+    text-align: center;
+}
+
+#section-title {
+    background-color: lightcoral; 
+    color: aqua;
+}
+
+ul li {
+    background-color: lightblue; 
+}
+
+.content {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}

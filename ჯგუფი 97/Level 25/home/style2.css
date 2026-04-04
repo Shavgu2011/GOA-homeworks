@@ -1,0 +1,17 @@
+body {
+    background-color: cadetblue;
+}
+
+h1 {
+    text-align: center;
+    color: beige;
+}
+
+.subject-list {
+    background-color: blanchedalmond;
+}
+
+.description {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}

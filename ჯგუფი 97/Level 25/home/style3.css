@@ -1,0 +1,18 @@
+body {
+    background-color: darkslategray ; 
+}
+
+#menu-title {
+    font-size: 36px;
+    color: bisque;
+    text-align: center;
+}
+
+.menu-item {
+    background-color: darkgoldenrod; 
+    text-align: left;
+}
+p {
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
