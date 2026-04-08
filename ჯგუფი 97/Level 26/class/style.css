@@ -1,0 +1,14 @@
+h1 {
+    color: #BD6A6A;
+    font-size: 35px;
+    text-decoration: underline dotted #333;
+    text-transform: uppercase;
+}
+
+p{
+    color: #333;
+    font-size: 60px;
+    text-shadow: 280px 10px 3px gold, -25px -87px 3px palegreen;
+    font-family: 'Courier New', Courier, monospace;
+
+}
