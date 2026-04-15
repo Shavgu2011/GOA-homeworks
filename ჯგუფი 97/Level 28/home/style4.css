@@ -1,0 +1,21 @@
+
+.example1 {
+  list-style-type: disc;
+}
+
+
+.example2 {
+  list-style-type: circle;
+}
+
+.example3 {
+  list-style-type: square;
+}
+
+.example4 {
+  list-style-type: upper-roman;
+}
+
+.example5 {
+  list-style-image: url('star.png'); /* გამოიყენე შენი პატარა სურათი */
+}
