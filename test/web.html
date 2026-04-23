@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Cartoon Hub Working</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0b0f14;
+  color: white;
+}
+
+header {
+  padding: 18px;
+  text-align: center;
+  border-bottom: 1px solid #222;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: #111824;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #222;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: #56d38a;
+}
+
+.poster {
+  height: 120px;
+  background: #222;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#playerPage {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+
+iframe {
+  width: 90%;
+  height: 420px;
+  border-radius: 12px;
+  border: none;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #1a2433;
+  color: white;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🎬 Cartoon Hub</h1>
+</header>
+
+<div id="home" class="grid">
+
+  <div class="card" onclick="play('dQw4w9WgXcQ')">
+    <div class="poster"></div>
+    <h3>Мульт 1</h3>
+  </div>
+
+  <div class="card" onclick="play('aqz-KE-bpKQ')">
+    <div class="poster"></div>
+    <h3>Мульт 2</h3>
+  </div>
+
+  <div class="card" onclick="play('J---aiyznGQ')">
+    <div class="poster"></div>
+    <h3>Мульт 3</h3>
+  </div>
+
+</div>
+
+<div id="playerPage">
+  <iframe id="video" allowfullscreen></iframe>
+  <br>
+  <button onclick="back()">← Назад</button>
+</div>
+
+<script>
+function play(id){
+  document.getElementById("home").style.display = "none";
+  document.getElementById("playerPage").style.display = "block";
+
+  // 🔥 ВАЖНО: правильный embed формат
+  document.getElementById("video").src =
+    "https://www.youtube.com/embed/" + id;
+}
+
+function back(){
+  document.getElementById("home").style.display = "grid";
+  document.getElementById("playerPage").style.display = "none";
+  document.getElementById("video").src = "";
+}
+</script>
+
+</body>
+</html>
