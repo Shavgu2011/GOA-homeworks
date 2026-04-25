@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform Examples</title>
+
+  <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body {
+      background: #0f172a;
+      color: white;
+      font-family: sans-serif;
+      padding: 30px;
+      text-align: center;
+    }
+
+    
+
+    /* 1) Lift */
+    .lift {
+      background: #4e73df;
+    }
+    .lift:hover {
+      transform: translateY(-20px);
+    }
+
+    /* 2) Rotate */
+    .rotate {
+      background: #ff6b6b;
+    }
+    .rotate:hover {
+      transform: rotate(10deg);
+    }
+
+    /* 3) Scale */
+    .scale {
+      background: #1dd1a1;
+    }
+    .scale:hover {
+      transform: scale(1.2);
+    }
+
+    /* 4) Skew */
+    .skew {
+      background: #feca57;
+      color: black;
+    }
+    .skew:hover {
+      transform: skewX(-15deg);
+    }
+
+    /* 5) Flip */
+    .flip {
+      background: #a55eea;
+    }
+    .flip:hover {
+      transform: rotateY(180deg);
+    }
+  </style>
+
+</head>
+<body>
+
+  <h1>Transform Examples</h1>
+
+  <div class="lift">1) TranslateY</div>
+  <div class="rotate">2) Rotate</div>
+  <div class="scale">3) Scale</div>
+  <div class=" skew">4) Skew</div>
+  <div class=" flip">5) RotateY</div>
+
+</body>
+</html>
