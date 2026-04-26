@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions Examples</title>
+  <style>
+    /* 1. Color change */
+    .color-box {
+      width: 100px;
+      height: 100px;
+      background: blue;
+      transition: background 0.5s ease;
+    }
+    .color-box:hover {
+      background: red;
+    }
+
+    /* 2. Size change */
+    .size-box {
+      width: 100px;
+      height: 100px;
+      background: green;
+      transition: width 0.5s ease, height 0.5s ease;
+    }
+    .size-box:hover {
+      width: 150px;
+      height: 150px;
+    }
+
+    /* 3. Opacity change */
+    .opacity-box {
+      width: 100px;
+      height: 100px;
+      background: purple;
+      transition: opacity 0.5s ease;
+    }
+    .opacity-box:hover {
+      opacity: 0.3;
+    }
+
+    /* 4. Rotation (with transform) */
+    .rotate-box {
+      width: 100px;
+      height: 100px;
+      background: orange;
+      transition: transform 0.5s ease;
+    }
+    .rotate-box:hover {
+      transform: rotate(45deg);
+    }
+
+    /* 5. Move (translate) */
+    .move-box {
+      width: 100px;
+      height: 100px;
+      background: pink;
+      transition: transform 0.5s ease-in-out;
+    }
+    .move-box:hover {
+      transform: translateX(50px);
+    }
+  </style>
+</head>
+<body>
+    <h2>CSS Transition Examples</h2>
+  <div class="color-box"></div><br>
+  <div class="size-box"></div><br>
+  <div class="opacity-box"></div><br>
+  <div class="rotate-box"></div><br>
+  <div class="move-box"></div>
+</body>
+</html>
+
+  
+  
+
+
