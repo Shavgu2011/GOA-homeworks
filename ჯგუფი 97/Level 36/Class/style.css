@@ -1,0 +1,28 @@
+div{
+    width:120px;
+    height: 50px;
+    background-color: cadetblue;
+    text-align: center;
+    padding-top:50px;
+    color: black;
+    animation: moving 2s linear 1s infinite forwards;
+
+}
+
+@keyframes moving {
+    0%{
+        transform: translateX(0);
+        
+        background-color: green;
+    }
+    50%{
+        transform: translateX(650px);
+        background-color: yellow;
+        
+    }
+    100%{
+        transform:translateX(0);
+        background-color: green;
+        
+    }
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Website</title>
+
+  <style>
+    
+    :root {
+      --main-bg: #0f172a;
+      --card-bg: #1e293b;
+      --accent: #38bdf8;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --shadow: 0px 10px 25px rgba(0,0,0,0.4);
+      --radius: 16px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: var(--main-bg);
+      color: var(--text);
+    }
+
+    
+    header {
+      background: rgba(30, 41, 59, 0.9);
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000; 
+      backdrop-filter: blur(10px);
+
+      
+      -webkit-backdrop-filter: blur(10px);
+      -moz-backdrop-filter: blur(10px);
+      -o-backdrop-filter: blur(10px);
+    }
+
+    header h1 {
+      float: left; 
+      font-size: 24px;
+      color: var(--accent);
+    }
+
+    nav {
+      float: right; 
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      margin-left: 20px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    
+    header::after {
+      content: "";
+      display: block;
+      clear: both; 
+    }
+
+    
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero h2 {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .hero button {
+      margin-top: 25px;
+      padding: 14px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: var(--radius);
+      background: var(--accent);
+      cursor: pointer;
+      color: black;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      transform: scale(1.08);
+    }
+
+    
+    .circle {
+      width: 220px;
+      height: 220px;
+      background: var(--accent);
+      border-radius: 50%;
+      position: absolute;
+      top: 40px;
+      left: 60px;
+      opacity: 0.2;
+      z-index: -1;
+    }
+
+    .circle2 {
+      width: 300px;
+      height: 300px;
+      background: purple;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 30px;
+      right: 50px;
+      opacity: 0.15;
+      z-index: -2; 
+    }
+
+    
+    .cards {
+      width: 90%;
+      margin: auto;
+      padding: 40px 0;
+    }
+
+    .card {
+      width: 30%;
+      background: var(--card-bg);
+      float: left; 
+      margin: 1.66%;
+      padding: 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: 0.3s;
+
+      
+      -webkit-box-shadow: var(--shadow);
+      -moz-box-shadow: var(--shadow);
+      -o-box-shadow: var(--shadow);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h3 {
+      color: var(--accent);
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    
+    .cards::after {
+      content: "";
+      display: block;
+      clear: both; 
+    }
+
+    
+    footer {
+      background: #0b1220;
+      padding: 25px;
+      text-align: center;
+      color: var(--muted);
+      margin-top: 50px;
+    }
+
+    footer span {
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SkyDesign</h1>
+    <nav>
+      <a href="#">მთავარი</a>
+      <a href="#">სერვისები</a>
+      <a href="#">ჩვენ შესახებ</a>
+      <a href="#">კონტაქტი</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="circle"></div>
+    <div class="circle2"></div>
+
+    <h2>Modern Web Design</h2>
+    <p>
+      ეს არის თანამედროვე დიზაინის მაგალითი, სადაც გამოყენებულია float, clear, z-index,
+      :root ცვლადები და prefix-ები.
+    </p>
+    <button>დაიწყე ახლავე</button>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <h3>სიჩქარე</h3>
+      <p>ჩვენი ვებსაიტები მაქსიმალურად სწრაფია და ოპტიმიზირებული.</p>
+    </div>
+
+    <div class="card">
+      <h3>დიზაინი</h3>
+      <p>მინიმალისტური და დახვეწილი სტილი, რომელიც ყველას მოეწონება.</p>
+    </div>
+
+    <div class="card">
+      <h3>უსაფრთხოება</h3>
+      <p>თანამედროვე უსაფრთხოების სტანდარტებით აწყობილი სტრუქტურა.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 <span>SkyDesign</span> | ყველა უფლება დაცულია
+  </footer>
+
+</body>
+</html>
