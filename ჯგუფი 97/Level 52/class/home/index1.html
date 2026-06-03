@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კინოს ბილეთი</title>
+</head>
+<body>
+
+<script>
+    let age = Math.floor(Number(prompt("შეიყვანეთ თქვენი ასაკი:")));
+
+    if (!(age > 0 && age <= 120)) {
+        document.write("გთხოვთ შეიყვანოთ სწორი ასაკი!");
+    } else if (age < 18) {
+        document.write("ბილეთის ფასი: 5 ლარი");
+    } else {
+        document.write("ბილეთის ფასი: 10 ლარი");
+    }
+</script>
+
+</body>
+</html>

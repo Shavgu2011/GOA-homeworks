@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = Number(prompt("შეიყვანეთ რიცხვი (1-100):"));
+
+            if (!(Number.isInteger(num) && num >= 1 && num <= 100)) {
+                document.write("არასწორი რიცხვია!");
+            } else {
+                document.write("სწორი რიცხვია: " + num);
+        }
+    </script>
+</body>
+</html>
